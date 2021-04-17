@@ -152,3 +152,9 @@ input[type=submit]:hover {
   align-items: center;
   grid-column: 5 / 9;
 }
+
+.portfolio-image {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
