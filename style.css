@@ -35,7 +35,6 @@ main{
 
 section{
   width: 100%;
-  background: #313131;
 }
 
 
@@ -162,4 +161,17 @@ input[type=submit]:hover {
   justify-content: center;
   align-items: center;
   grid-column: 7 / 12;
+}
+
+.box-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 5 / 9;
+}
+
+.portfolio-image {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
