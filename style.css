@@ -158,16 +158,19 @@ input[type=submit]:hover {
 .box-left {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
   grid-column: 2 / 6;
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 .box-right {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
   grid-column: 7 / 12;
   flex-direction: column;
+  align-self: flex-start;
 }
 
 .box-center {
@@ -177,11 +180,8 @@ input[type=submit]:hover {
   grid-column: 5 / 9;
 }
 
-.box-title {
-  display: flex;
+.title {
   justify-content: start;
-  align-items: center;
-  grid-column: 2 / 6;
 }
 
 .portfolio-image {
@@ -244,4 +244,5 @@ input[type=submit]:hover {
   text-align: left;
   background-color: #9daf4c;
   color: white;
+  align-self: flex-start;
 }
