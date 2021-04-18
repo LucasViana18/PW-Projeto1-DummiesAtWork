@@ -86,7 +86,7 @@ nav{
   word-spacing: 100px;
   font-size: x-large;
   position: sticky;
-  z-index: 2;
+  z-index: 10;
 }
 
 .navLink{
@@ -193,15 +193,17 @@ input[type=submit]:hover {
 .overlay-image1{
   position:relative;
   top: 10px;
-  left: 450px;
+  left: 380px;
   z-index: 1;
+  border: 1px solid white;
 }
 
 .overlay-image2{
   position:relative;
   top: 50px;
-  left: 0px;
+  left: -10px;
   z-index: 2;
+  border: 1px solid white;
 }
 
 .overlay-image3{
@@ -209,9 +211,38 @@ input[type=submit]:hover {
   top: 100px;
   left: -450px;
   z-index: 2;
+  border: 1px solid white;
+}
+
+.overlay-image4{
+  position:relative;
+  top: -30px;
+  left: 700px;
+  z-index: 0;
+  border: 1px solid white;
 }
 
 .catch-phrase {
   font-size: xx-large;
+}
+
+.tabela{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabela td, .tabela th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tabela tr:nth-child(even){background-color: #585858;}
+
+.tabela th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9daf4c;
+  color: white;
   align-self: flex-start;
 }
