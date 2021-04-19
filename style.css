@@ -246,8 +246,57 @@ input[type=submit]:hover {
   align-self: flex-start;
 }
 
+.navPC{
+  display: block;
+}
+
+.navPhone{
+  display: none;
+}
+
+.navBar{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.navToggle{
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+  top: 0;
+}
+
+.navCheckbox{
+  display: none;
+}
+
+li{
+  list-style: none;
+  display: none;
+}
+
+#navCheckbox:checked ~ ul.navMenuPhone li{
+  display:block;
+}
+
+#navCheckbox:checked nav{
+  height: 250px;
+}
+
 @media only screen and (max-width: 812px) {
   
+
+  .navPC{
+    display: none;
+  }
+
+  .navPhone{
+    display: block;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
